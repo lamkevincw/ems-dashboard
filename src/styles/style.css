@@ -1,0 +1,210 @@
+body {
+  margin-top: 100px;
+  font-size: 0.875rem;
+}
+
+.feather {
+  width: 16px;
+  height: 16px;
+  vertical-align: text-bottom;
+}
+
+/*
+ * Sidebar
+ */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100; /* Behind the navbar */
+  padding: 0;
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 48px; /* Height of navbar */
+  height: calc(100vh - 48px);
+  padding-top: 0.5rem;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+.sidebar .nav-link {
+  font-weight: 500;
+  color: #333;
+}
+
+.sidebar .nav-link .feather {
+  margin-right: 4px;
+  color: #999;
+}
+
+.sidebar .nav-link.active {
+  color: #007bff;
+}
+
+.sidebar .nav-link:hover .feather,
+.sidebar .nav-link.active .feather {
+  color: inherit;
+}
+
+.sidebar-heading {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+/*
+ * Navbar
+ */
+
+.navbar-brand {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  font-size: 1rem;
+  /* background-color: rgba(0, 0, 0, 0.25); */
+  /* box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.25); */
+}
+
+.navbar .form-control {
+  padding: 0.75rem 1rem;
+  border-width: 0;
+  border-radius: 0;
+}
+
+.form-control-dark {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.form-control-dark:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.25);
+}
+
+/*
+ * Utilities
+ */
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/* Timeseries styling */
+.tab-content {
+  margin-top: 60px;
+}
+
+.content {
+  text-align: center;
+  width: 100%;
+  height: calc(100vh - 150px);
+  padding: 0 30px;
+  color: #1b1b1b;
+  flex-grow: 1;
+  flex-shrink: 1;
+  position: relative;
+}
+
+.content div {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.content .headerRow {
+  margin-top: 5px;
+  height: 3%;
+  clear: both;
+}
+
+.content .headerCol {
+  float: left;
+  width: 75px;
+  padding: 0;
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.content .row {
+  display: flex;
+  height: 24%;
+  clear: both;
+  align-items: center;
+}
+
+.content .column {
+  float: left;
+  width: 18%;
+  padding: 0;
+  font-size: 14px;
+}
+
+.content .chartContainer {
+  display: block;
+  margin: 10px;
+  margin-right: 10px;
+  height: 85%;
+  background: #f8f8f8bb;
+  border-radius: 3px;
+}
+
+.chartContainer:hover {
+  cursor: pointer;
+  background: #edf6fcbb;
+}
+
+.content .chartCanvas {
+  width: 100%;
+  height: 100%;
+}
+
+.control-panel li {
+  margin-top: 10px;
+}
+
+.control-panel .control-heading {
+  margin: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.control-panel .control-name {
+  margin: 15px;
+  font-size: 16px;
+}
+
+.control-panel .control-item {
+  font-size: 16px;
+}
+
+input[type="checkbox"] {
+  margin-left: 10px;
+}
+
+input[type="text"] {
+  margin-left: 10px;
+  width: 50px;
+}
+
+.zoomedChart {
+  position: absolute;
+  transform: scale(5);
+  left: 200%;
+  top: 200%;
+  background: white;
+}
+
+.uploadDiv {
+  position: absolute;
+  top: 0;
+  background: white;
+  width: 100%;
+  height: 100%;
+}

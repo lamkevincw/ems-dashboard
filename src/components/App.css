@@ -1,0 +1,7 @@
+.tab-content>.tab-pane {
+    display: none;
+}
+
+.new-line {
+    white-space: pre-line;
+  }

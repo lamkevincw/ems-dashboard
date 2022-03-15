@@ -1,0 +1,126 @@
+[
+    {
+        "date": "January 14, 2022",
+        "changes": [
+            "Initial version and upload of the app for the Kerrobert trial data."
+        ]
+    },
+    {
+        "date": "January 17, 2022",
+        "changes": [
+            "Ported code from the expanded views to allow for D3 drawing on the timeseries overviews page.",
+            "Currently only working on reproducing temperature (tcm_temp) changes over time on the overall row.",
+            "Refactored code to work for multiple charts on the same page."
+        ]
+    },
+    {
+        "date": "January 18, 2022",
+        "changes": [
+            "Temperature (blue lines) charts are now functioning on the timeseries overview page.",
+            "Uses trial data loaded from a js file.",
+            "Shows temperatures for top, middle, and bottom sensors of the quantifier (using pressure_temp).",
+            "Shows overall temperatures using tcm_temp."
+        ]
+    },
+    {
+        "date": "January 20, 2022",
+        "changes": [
+            "Pressures (red lines) are now shown on the timeseries overview charts for all quantifiers and sensors.",
+            "Pressures in the overall row are averages calculated from the top, middle, and bottom sensors.",
+            "Data points that have any NA or NaN values use the values from the previous point to prevent spikes to zero on the charts.",
+            "Will use interpolation between neighbouring points in the future."
+        ]
+    },
+    {
+        "date": "January 25, 2022",
+        "changes": [
+            "Added a control panel to house main interaction controls.",
+            "Added checkboxes that toggle the visibility of the temperature and pressure plots."
+        ]
+    },
+    {
+        "date": "January 28, 2022",
+        "changes": [
+            "Changed the look of the dashboard through the use of Bootstrap for styling.",
+            "Added controls for adjusting x and y axes.",
+            "Added Dashboard tab as an example for future content.",
+            "Condensed html files into one file (index.html).",
+            "Condensed JavaScript files into one file (timeseries-overview.js).",
+            "Reworked some code to reduce repetition.",
+            "Changed file structure for the dashboard files and no longer using Express and Node until future AWS implementation. Structured only for frontend development currently."
+        ]
+    },
+    {
+        "date": "February 2, 2022",
+        "changes": [
+            "Finished adding all important variables to the timeseries charts with visibility togglable.",
+            "Added new tab for testing new charting libraries for further work on timeseries charts.",
+            "Implemented ChartJS for plotting new charts.",
+            "Added new script for processing data for the new charts.",
+            "Fixed more CSS issues regarding page layout."
+        ]
+    },
+    {
+        "date": "February 7, 2022",
+        "changes": [
+            "Finished reimplementing timeseries charts using the ChartJS library.",
+            "Visibility toggle is now working for new timeseries charts.",
+            "When visiblity is toggled, the y-axis will automatically rescale for the remaining data."
+        ]
+    },
+    {
+        "date": "February 10, 2022",
+        "changes": [
+            "Toggling visibility of variables will now automatically adjust the y-axis to 105% of maximum value of all charts."
+        ]
+    },
+    {
+        "date": "February 11, 2022",
+        "changes": [
+            "Changed underlying ChartJS type from 'line' to 'scatter' for more flexibility.",
+            "Zooming on one chart now zooms all charts to the same scale.",
+            "Toggling visibility while zoomed in now changes y-axis to show all currently visible lines."
+        ]
+    },
+    {
+        "date": "February 14, 2022",
+        "changes": [
+            "Added textboxes for showing the current x and y ranges.",
+            "Updated layout and format of the control panel."
+        ]
+    },
+    {
+        "date": "February 15, 2022",
+        "changes": [
+            "X and Y ranges can now be changed by entering a value into the textboxes and clicking the Update button.",
+            "Tooltip labels now display the time from start (in minutes) and the local datetime.",
+            "Tooltips now move dynamically with the mouse and attempts to show as much of the tooltip as possible."
+        ]
+    },
+    {
+        "date": "February 17, 2022",
+        "changes": [
+            "A separate page is available for uploading a .csv dataset under the 'Upload Dataset' link on the upper right.",
+            "Changed the minimum width of individual charts to accomodate more than 5 quantifiers.",
+            "Errors may occur with the layout of the site when displaying >5 quantifiers.",
+            "Errors may occur if the uploaded dataset contains different column headers."
+        ]
+    },
+    {
+        "date": "March 1, 2022",
+        "changes": [
+            "Added Google Analytics to track user engagement of the dashboard."
+        ]
+    },
+    {
+        "date": "March 4, 2022",
+        "changes": [
+            "Changed underlying framework to ReactJS.",
+            "Changed layout to work with React Bootstrap.",
+            "Changed primary charting library from ChartJS to Recharts.",
+            "Changed format of data arrays to better suit future long data format of .csv.",
+            "Added a Map tab to display locations of quantifiers on an interactive map.",
+            "Added a Reporting tab to highlight alarms and issues with the quantifiers."
+        ]
+    }
+]
