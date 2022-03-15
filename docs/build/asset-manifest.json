@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ems-dashboard/static/css/main.3fe24f70.css",
+    "main.js": "/ems-dashboard/static/js/main.12b514dd.js",
+    "index.html": "/ems-dashboard/index.html",
+    "main.3fe24f70.css.map": "/ems-dashboard/static/css/main.3fe24f70.css.map",
+    "main.12b514dd.js.map": "/ems-dashboard/static/js/main.12b514dd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3fe24f70.css",
+    "static/js/main.12b514dd.js"
+  ]
+}
